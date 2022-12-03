@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta name="description" content="wedding webside">
   <meta charset="utf-8">
@@ -17,127 +17,119 @@
 <body>
 <header class="cover">
     <div class="byline">
-      <h4 class="tagline">WE'RE GETTING MARRIED!</h4>
+      <h4>WE'RE GETTING MARRIED!</h4>
       <br>
-      <hr class="sign">
-      <h1 class="names"> ZOE & ALEX</h1>
+      <hr id="sign">
       <br>
-      <h4 class="date">-August 1, 2018-</h4>
+      <h1> ZOE & ALEX</h1>
+      <br>
+      <h4>-August 1, 2018-</h4>
     </div>
 </header>
-<div class="locations">
+<br>
+<div id="places"> 
   <h1>Locations</h1>
-  <br>
-  <h3 id="rings">Ceremony</h3>
-  <h3 id="photo">Photo</h3>
-  <h3 id="cake">Party</h3>
-  <br>
-  <br>
-  <br>
-  <img id="rings" src= "assets/rings.png">
-  <img id="photo" src="assets/photoshoot.png">
-  <img id="cake" src="assets/cake.png">
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <h5 id="rings">St. Nicholas Church, 2 Trinity Square, Budapest</h5>
-  <h5 id="photo">Liberty Bastion, 23 Wisdom Road, Budapest</h5>
-  <h5 id="cake">Heaven Lounge, 14 Fairy Street, Budapest</h5>
+  <div class="flex-container">
+    <div>Ceremony</div>
+    <div>Photo</div>
+    <div>Party</div>
   </div>
-  <section>
-    <div id="container">
-    <h1>Program</h1>
-      <br>
-      <p>"It's going to be somehow, that's for sure."</p>
-        <ul>
+</div>
+
+  <div id="places-fotos"> 
+    <div><img id="rings" src= "assets/rings.png" alt="rings"></div>
+    <div><img id="photo" src="assets/photoshoot.png" alt="photo"></div>
+    <div><img id="cake" src="assets/cake.png" alt="cake"></div>
+  </div>
+  <br>
+<div id="places-locations">
+  <div><h5> St. Nicholas Church, 2 Trinity Square, Budapest</h5></div>
+  <div><h5>Liberty Bastion, 23 Wisdom Road, Budapest</h5></div>
+  <div><h5>Heaven Lounge, 14 Fairy Street, Budapest</h5></div>
+</div>
+  
+<section>
+  <br>
+  <div id="container">
+    <h2>Program</h2>
+    <br>
+    <p>"It's going to be somehow, that's for sure."</p>
+      <ul>
         <li>13:45 – Wedding ceremony</li>
         <li>14:30 – Photos</li>
         <li>16:00 – Cocktails</li>
         <li>22:00 – Cake</li>
         <li>... - 4:00 – Dance until dawn</li>
       </ul>
-    </div>
-  </section>
+  </div>
+  <br>
+</section>
+  
 <div class="gifts">
+  <br>
   <h1>Gifts</h1>
   <br>
-  <br>
   <h3>The greatest gift for us is to have you there.</h3>
-  <img id="gifts" src="assets/gifts.png">
   <br>
+  <div id="gifts-foto">
+    <img id="gifts" src="assets/gifts.png" alt="gifts">
+  </div>
   <br>
   <h3>Please, just bring yourself and have fun with us.</h3>
 </div>
-<div id="container2">
+<br>
+<div id="details"> 
+  <br>
   <h1>Questions & Answers</h1>
-  <div id="box-1" class="box">
-    <h3>Travel and accomodations</h3>
-    <h4><b>Will there be some kind of organized transfer?</b></h4>
-    <br>
-    <h5>No, we'll just meet at the church at 13:15.</h5>
-    <br>
-    <h4><b>Where can I park?</b></h4>
-    <br>
-    <h5>Parking is free on the weekends in the 1st district. The locations are close to each other so you won't need your car.</h5>
-    <br>
-    <h4><b>How can I get home at night?</b></h4>
-    <br>
-    <h5>The 916 bus is in service all night at the castle and it hits every major traffic hub in the city.</h5>
-  </div>
-  <div id="box-2" class="box">
-    <h3>Food and festivities</h3>
-    <h5>I'd like to do some kind of surprise for you guys at the party.</h5>
-     <br>
-     <h4><b>To whom should I talk about this?</b></h4>
-     <br>
-     <h5>Discuss it with Abigail Smith. Just drop her an email at <a href="#">abigail@awesomemail.com.</a></h5>
-     <br>
-     <h4><b>What should I wear?</b> <b>Do you have a dress code?</b></h4>
-     <br>
-     <h5>Wear what's comfortable to you. If it helps <a href="#">smart casual</a> / <a href="#">business casual</a> for the ladies and <a href="#">smart casual</a> / <a href="#">informal</a> for the gentlemen are perfect options.</h5>
-     <br>
-     <h5>I would like some kind of special food (gluten-free, lactose-free, vegan etc.)</h5>
-     <br>
-     <h5>Drop us a line <a href="#">here</a> and we'll find a way.</h5>
-  </div>
-  <div id="box-3" class="box">
-    <h3>Other small stuff</h3>
-    <h5>I have a problem / question on the wedding day.</h5>
-    <br>
-    <h4><b>With whom can I speak?</b></h4>
-    <br>
-    <h5>Jared Wright on this number: <a href="#">+36 30 000 0000.</a></h5>
-    <br>
-    <h4><b>Can we bring kids?</b></h4>
-    <br>
-    <h5>Sure! We planned a whole toy / sweets corner for them.</h5>
-    <br>
-    <h4><b>How do you feel about dogs?</b></h4>
-    <h4><b>Can I bring mine?</b></h4>
-    <br>
-    <h5>We love dogs and you can absolutely bring yours. The Heaven Lounge is a dog-friendly place.</h5>
+  <div class="case">
+    <div>Travel<br>and<br>lodgments
+      <br>
+      <br>
+      <h4><b>Will there be some kind of organized transfer?</b></h4>
+      <h6>No, we'll just meet at the church at 13:15.</h6>
+      <h4><b>Where can I park?</b></h4>
+      <h6>Parking is free on the weekends in the 1st district. <br>The locations are close to each other so you won't need your car.</h6>
+      <h4><b>How can I get home at night?</b></h4>
+      <h6>The 916 bus is in service all night at the castle and it hits every major traffic hub in the city.</h6>
+    </div>
+    <div>Food<br>and<br>festivities
+      <br>
+      <br>
+      <h6>I'd like to do some kind of surprise for you guys at the party.</h6>
+      <h4><b>To whom should I talk about this?</b></h4>
+      <h6>Discuss it with Abigail Smith. Just drop her an email at <a href="#">abigail@awesomemail.com.</a></h6>
+      <h4><b>What should I wear?</b> <b>Do you have a dress code?</b></h4>
+      <h6>Wear what's comfortable to you. If it helps <a href="#">smart casual</a> / <a href="#">business casual</a> for the ladies and <a href="#">smart casual</a> / <a href="#">informal</a> for the gentlemen are perfect options.</h6>
+      <h6>I would like some kind of special food (gluten-free, lactose-free, vegan etc.)</h6>
+      <h6>Drop us a line <a href="#">here</a> and we'll find a way.</h6>
+    </div>
+    <div>Other<br>small<br>stuff
+      <br>
+      <br>
+      <h6>I have a problem / question on the wedding day.</h6>
+      <h4><b>With whom can I speak?</b></h4>
+      <h6>Jared Wright on this number: <a href="#">+36 30 000 0000.</a></h6>
+      <h4><b>Can we bring kids?</b></h4>
+      <h6>Sure! We planned a whole toy / sweets corner for them.</h6>
+      <h4><b>How do you feel about dogs?</b></h4>
+      <h4><b>Can I bring mine?</b></h4>
+      <h6>We love dogs and you can absolutely bring yours. The Heaven Lounge is a dog-friendly place.</h6>
+    </div>
   </div>
 </div>
-  <aside>
-    <div id="contact">
-      <h1>Contact</h1>
-      <h3>If you have any questions feel free to call / write us.
+<br>
+<div id="contact">
+  <h1>Contact</h1>
+  <h3>If you have any questions feel free to call / write us.
       <br>
       Phone: <a href="#">+36 30 000 0000</a> (Zoe) / <a href="#">+36 30 000 0000</a> (Alex)<br>
       Email: <a href="#">zoeandalex@awesomemail.com</a>
-      </h3>
-    </div>
-  </aside>
-  <footer>
+  </h3>
+</div>
+<footer>
+  <div id="made">
     <p>Made with ♥ in Budapest ©2018 | Icons by <a href="#">Becris</a> (<a href="#">CC 3.0 BY</a>)</p>
-  </footer>
+  </div>
+</footer>
 </body>
 </html>

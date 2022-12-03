@@ -3,22 +3,23 @@
   background-size: cover;
   height: 100vh;
   width: 100vw;
-  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 body {
-  background: url('assets/paper.png')
+  background: url('assets/paper2.jpg')
 }
+
 
 /* ==== BYLINE ==== */
 
+
 .byline h1 {
   font-family: 'Great Vibes', cursive;
-  font-size: 4.125rem;
+  font-size: 3.5rem;
   color: #bd806e;
-  line-height: 1.5rem;
-  letter-spacing: .1rem;
-  margin-bottom: .5rem;
-  text-transform: uppercase;
   text-align: center;
 }
 .byline h4 {
@@ -26,102 +27,120 @@ body {
   font-size: 1.625rem;
   color: #ffffff;
   line-height: 1.5rem;
+  text-align: center;
+  margin: 1rem;
 }
 .byline {
   background-color: hsla(0, 0%, 10%, .7);
   border-radius: 5px;
-  padding: 0 .625rem;
-  height: 50%;
-  width: 40%;
+  padding: 0.625rem;
+  height: 35%;
+  width: 45%;
   max-width: calc(100vw - 10px);
-  position: absolute;
-  top: 35%;
-  left: 30%;
 }
 
-/* ==== BYLINE NAVIGATION ==== */
 
-.tagline {
-  position: absolute;
-  top: 5%;
-  left: 10%;
-  margin: 1rem;
-}
-.sign {
-  color: #bd806e;
-  position: absolute;
-  width: 50%;
-  top: 20%;
-  left: 25%;
-}
-.names {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-}
-.date {
-  position: absolute;
-  top: 80%;
-  left: 30%;
-}
-
-/* ====  LOCATIONS  ==== */
+/* ==== SIGN STILE ==== */
 
 
-.locations h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2.125rem;
-  color: rgb(77, 77, 77);
-  line-height: 1.5rem;
-  letter-spacing: .1rem;
-  margin-top: 5%;
-  margin-bottom: .5rem;
-  text-transform: uppercase;
+#sign {
+  color: yellow;
+  width: 40%;
+}
+
+
+/* === PLACES === */
+
+
+#places h1 {
+   font-family: 'Great Vibes', cursive;
+   color: rgb(77, 77, 77);
+   font-size: 3rem;
+   text-align: center;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-}
-.locations h3 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 1.625rem;
+  font-size: .2rem;
+  height: 15vh;
   color: rgb(77, 77, 77);
+  width: 100vw;
 }
-.locations h5 {
+.flex-container div {
+  margin: .625rem;
+  padding: 1.25rem;
+  font-size: 1.5rem;
+  width: 30vw;
+}
+#places-fotos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 10vh;
+  width: 100vw;
+}
+#places-fotos div {
+  margin: .625rem;
+  padding: .6rem;
+  font-size: 1.5rem;
+  width: 30vw;
+}
+#places-fotos img {
+  width: 6.255rem;
+  height: 6.25rem;
+}
+#places-locations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+}
+#places-locations div {
+  margin: .625rem;
+  padding: 1.25rem;
+  font-size: 1.5rem;
+  width: 30vw;
+}
+#places-locations h5 {
  font-family: 'Libre Baskerville', serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: rgb(77, 77, 77); 
 }
 
-/* ==== LOCATIONS NAVIGATION ==== */
-
-#rings {
-  width: 12%;
-  position: absolute;
-  left: 15%;
-}
-#photo {
-  width: 12%;
-  position: absolute;
-  left: 45%;
-}
-#cake {
-  width: 12%;
-  position: absolute;
-  left: 75%;
-}
 
 /* ==== PROGRAM/SECTION NAVIGATION ==== */
 
+
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: .2rem;
+  height: 15vh;
+  color: rgb(77, 77, 77);
+  width: 100vw;
+}
+.flex-box div {
+  margin: .625rem;
+  padding: 1.25rem;
+  font-size: 1.5rem;
+  width: 30vw;
+}
 section {
   background-color: #999999;
-  padding: 1rem;
-  height: 50%;
   width: 100%;
-  position: absolute;
-  top: 170%;
 }
-section h1 {
+section h2 {
   font-family: 'Great Vibes', cursive;
   color: #6f582a;
-  font-size: 2.5rem;
+  font-size: 2.9rem;
   text-align: center;
 }
 section p {
@@ -135,26 +154,15 @@ section ul, li {
   font-family: 'Mulish', sans-serif;
   color: #6f582a;
   font-size: 1.25rem;
-  text-align: center;
   line-height: 1.5rem;
+  text-align: center;
   margin: 1rem;
-  left: 45%;
-  
 }
-#container {
-  position: relative;
-  top: 14%;
-}
+
 
 /* ==== GIFTS NAVIGATION ==== */
 
-.gifts {
-  position: absolute;
-  width: 23%;
-  height: 23%;
-  top: 225%;
-  left: 40%;
-}
+
  .gifts h1 {
   font-family: 'Great Vibes', cursive;
   color: #6f582a;
@@ -168,66 +176,66 @@ section ul, li {
   color: rgb(77, 77, 77);
   text-align: center;
 }
+#gifts-foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 #gifts {
-  width: 40%;
-  position: relative;
-  left: 30%;
+  width: 6.255rem;
+  height: 6.255rem;
 }
 
-/* ==== Questions & Answers NAVIGATION ==== */
 
-#container2 {
+/* ==== QUESTION & ANSWERS NAVIGATION ==== */
+
+
+#details {
   background-color: #999999;
-  margin: 0px;
-  padding: 1rem;
-  height: 95%;
-  width: 100%;
-  position: absolute;
-  top: 280%;
+  height: 95vh;
+  width: 100vw;
 }
-#container2 h1 {
+.case {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+.case div {
+  margin: 1rem;
+  width: 25vw;
+  height: 10vh;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: #6f582a;
+}
+#details h1 {
   font-family: 'Great Vibes', cursive;
   font-size: 3.125rem;
   margin: 1rem;
   color: #6f582a;
   text-align: center;
 }
-#container2 h3 {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 1.5rem;
-  margin: 1rem;
-  color: #6f582a;
-  text-align: center;
-}
-#container2 h4, h5 {
+#details h4 {
   font-family: 'Mulish', sans-serif;
   color: #6f582a;
-  font-size: 1.15rem;
+  font-size: 1rem;
   margin: .5rem;
   text-align: left;
   letter-spacing: inherit;
   line-height: 1.5rem;
+  font-weight: bolder;
 }
-#box-1 {
-  height: 75%;
-  width: 25%;
-  position:absolute;
-  top: 20%;
-  left: 3%;
-}
-#box-2 {
-  height: 75%;
-  width: 25%;
-  position: absolute;
-  left: 37%;
-  top: 20%;
-}
-#box-3 {
-  height: 75%;
-  width: 25%;
-  position: absolute;
-  left: 70%;
-  top: 20%;
+#details h6 {
+  font-family: 'Mulish', sans-serif;
+  color: #6f582a;
+  font-size: 1rem;
+  margin: .5rem;
+  text-align: left;
+  letter-spacing: inherit;
+  line-height: 1.5rem;
 }
 a {
 	color: #b8452e;
@@ -235,18 +243,13 @@ a {
 }
 
 a:hover {
-	color: #eda087;
+	color: #eea890;
 }
+
 
 /* ==== CONTACT NAVIGATION ==== */
 
-#contact {
-  height: 35%;
-  width: 50%;
-  position: absolute;
-  top: 385%;
-  left: 25%;
-}
+
 #contact h1 {
   font-family: 'Great Vibes', cursive;
   color: #6f582a;
@@ -263,21 +266,29 @@ a:hover {
   letter-spacing: inherit;
   line-height: 3rem;
 }
+#contact a {
+	color: #b8452e;
+	text-decoration: none;
+}
+
+#contact a:hover {
+	color: #6e2811;
+}
+
 
 /* ==== FOOTER NAVIGATION ==== */
 
-footer {
-  background-color: #999999;;
-  margin: 0px;
-  padding: .5rem 1rem;
-  height: 10vh;
-  width: 100%;
-  position: absolute;
-  top: 425%;
+
+#made {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 8vh;
+  background-color: #999999;
 }
-footer p {
+#made p {
   font-family: 'Mulish', sans-serif;
   color: antiquewhite;
   text-align: center;
-  margin: 1.5rem;
 }
